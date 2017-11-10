@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.onepointglobal.mysurveysn">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <application
+        android:allowBackup="false"
+        android:configChanges="orientation|screenLayout|screenSize"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".BrowseActivity"/>
+        <activity
+            android:name=".SurveyListActivity"
+            android:label="Survey List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AuthenticateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Authenticate"/>
+        <activity
+            android:name=".GetThemeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Theme List"/>
+        <activity
+            android:name=".GetPanelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Panel List"/>
+        <activity
+            android:name=".GetSurveyPanelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Survey Panel List"/>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Forgot Password"/>
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Change Password"/>
+        <activity
+            android:name=".GetPanellistProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Panellist Profile"/>
+        <activity
+            android:name=".UpdatePanellistProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Update Panellist Profile"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".GetScriptActivity"
+            android:label="Download Script"/>
+        <activity
+            android:name=".DownloadMediaActivity"
+            android:configChanges="orientation"
+            android:label="Download Media"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UploadMediaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Upload Media"/>
+        <activity
+            android:name=".GetPanellistPanel"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="GetPanellistPanel"/>
+        <activity
+            android:name=".LogoutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Logout Activity"/>
+        <activity
+            android:name=".AuthenticateWithSocialMedia"
+            android:label="AuthenticateWithSocialMedia"/>
+        <activity
+            android:name=".GetCountries"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Country List"/>
+        <activity
+            android:name=".GetGeofenceSurvey"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Geofence Survey List"/>
+        <activity
+            android:name=".NotificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="NotificationActivity"/>
+        <activity android:name=".SurveyListPanelActivity">
+        </activity>
+    </application>
+
+</manifest>
